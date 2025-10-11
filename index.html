@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Update Soon</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  <meta charset="UTF-8">
+  <title>Update Soon</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
 
-        h1 {
-            font-size: 4em;
-            font-family: Arial, sans-serif;
-            color: #ff0000;
-            text-shadow: 0 0 10px #0ff, 0 0 20px rgb(255, 10, 214), 0 0 40px #0ff;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
+    h1 {
+      font-size: 4em;
+      color: #ff0000;
+      text-shadow: 0 0 10px #0ff, 0 0 20px rgb(255, 10, 214), 0 0 40px #0ff;
+      animation: glow 2s ease-in-out infinite alternate;
+      margin-bottom: 60px;
+    }
 
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
-            }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 15px #0ff;
+      }
+      to {
+        text-shadow: 0 0 20px #0ff, 0 0 30px rgb(25, 0, 255), 0 0 40px #0ff;
+      }
+    }
 
-            to {
-                text-shadow: 0 0 20px #0ff, 0 0 30px rgb(25, 0, 255), 0 0 40px #0ff;
-            }
-        }
-    </style>
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border: 2px solid #0ff;
+      border-radius: 30px;
+      color: #0ff;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 1.1em;
+    }
+
+    .contact a:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 20px #0ff;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Update Soon...</h1>
-</body>
+  <h1>Update Soon...</h1>
 
+  <div class="contact">
+    <h2>📞 Contact Admin</h2>
+    <a href="https://wa.me/918969884164" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/a_srluckye" target="_blank">Instagram</a>
+  </div>
+
+</body>
 </html>
